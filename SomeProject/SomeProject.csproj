@@ -8,7 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Analyzer Include="..\AnalyzerProject\bin\Release\netstandard2.0\AnalyzerProject.dll" />
-  </ItemGroup>
+    <ProjectReference Include="..\AnalyzerProject\AnalyzerProject.csproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <OutputItemType>Analyzer</OutputItemType>
+    </ProjectReference>
+   </ItemGroup>
 
 </Project>

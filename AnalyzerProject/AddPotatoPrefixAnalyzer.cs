@@ -11,7 +11,7 @@ public class AddPotatoPrefixAnalyzer : DiagnosticAnalyzer
 {
     public const string DiagnosticId = "POTATO1";
 
-    public static readonly DiagnosticDescriptor Descriptor = new(DiagnosticId, string.Empty, "The variable '{0}' lacks the 'potato' prefix.",
+    public static readonly DiagnosticDescriptor Descriptor = new(DiagnosticId, string.Empty, "The variable '{0}' lacks the 'potato' prefix",
         "Design", DiagnosticSeverity.Warning, isEnabledByDefault: true);
 
     public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(Descriptor);
